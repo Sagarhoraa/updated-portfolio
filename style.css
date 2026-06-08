@@ -18,7 +18,7 @@
         -> Copy the color mode (HSL)
     */
   
-    --hue: 162;
+    --hue: 8912;
     --first-color: hsl(var(--hue), 100%, 40%);
     --first-color-alt: hsl(var(--hue), 56%, 35%);
     --title-color: hsl(228, 8%, 95%);
@@ -130,6 +130,11 @@ body {
 .section__title {
     font-size: var(--h1-font-size);
     margin-bottom: 1.5rem;
+  }
+  .company__name {
+    color: var(--first-color);
+    font-weight: var(--font-semi-bold);
+    text-decoration: underline;
   }
   .section__subtitle {
     font-size: var(--small-font-size);
@@ -366,6 +371,7 @@ body {
 .services__container{
   row-gap: 2rem;
   padding-block: 1rem;
+
 }
 .services__card{
   text-align: center;
@@ -704,6 +710,8 @@ body {
   }
   .skills__description{
     margin-bottom: 3rem;
+    text-align: justify;
+
   }
   .skills__content{
     column-gap: 8rem;

@@ -42,7 +42,7 @@ const contactForm = document.getElementById('contact-form'),
 
 (function () {
     emailjs.init({
-        publicKey: "D8ZAoEtPZ_eoqRs8M",
+        publicKey: "NokrG8wBY0mz4l63X",
     });
 })();
 const sendEmail = (e) => {
@@ -54,10 +54,10 @@ const sendEmail = (e) => {
         to_name: 'Sagar Adhikari'
     };
     // serviceID - templateID - templateParams - #form
-    emailjs.send('service_hzhrdgu', 'template_gh5cnm2', templateParams, e.target)
+    emailjs.send('service_dgryhla', 'template_61botsn', templateParams, e.target)
         .then(() => {
             // Show sent message
-            contactMessage.textContent = 'Message sent successfully 😉'
+            contactMessage.textContent = 'Message sent successfully😉'
 
             // Remove message after five seconds
             setTimeout(() => {
